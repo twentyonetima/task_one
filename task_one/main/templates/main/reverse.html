@@ -1,0 +1,13 @@
+{% extends 'main/base.html'%}
+
+{% block title %}
+Reverse page
+{% endblock %}
+
+{% block content %}
+    <a href="{% url 'reverse' %}"></a>
+    <h1>Original text</h1>
+    <p>{{usertext}}</p>
+    <h1>Reversed text</h1>
+    <p>{{reversedtext}}</p>
+{% endblock %}
